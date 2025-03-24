@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-24T20:05:43 IST" name="Default suite" finished-at="2025-03-24T20:05:55 IST" duration-ms="12044">
+    <groups>
+    </groups>
+    <test started-at="2025-03-24T20:05:43 IST" name="Default test" finished-at="2025-03-24T20:05:55 IST" duration-ms="12044">
+      <class name="guru99DemoSite.MouseActions">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:guru99DemoSite.MouseActions@5b7a5baa]" started-at="2025-03-24T20:05:43 IST" name="setUp" finished-at="2025-03-24T20:05:54 IST" duration-ms="11151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="contextClick()[pri:0, instance:guru99DemoSite.MouseActions@5b7a5baa]" started-at="2025-03-24T20:05:54 IST" name="contextClick" finished-at="2025-03-24T20:05:55 IST" duration-ms="406" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contextClick -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:guru99DemoSite.MouseActions@5b7a5baa]" started-at="2025-03-24T20:05:55 IST" name="tearDown" finished-at="2025-03-24T20:05:55 IST" duration-ms="409" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- guru99DemoSite.MouseActions -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

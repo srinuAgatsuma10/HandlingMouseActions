@@ -5,8 +5,8 @@
     <classes>
       <class name="automationBlogSpot.MouseActions">
         <methods>
-          <include name="doubleClick"/>
           <include name="tearDown"/>
+          <include name="dragAndDrop"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- automationBlogSpot.MouseActions -->

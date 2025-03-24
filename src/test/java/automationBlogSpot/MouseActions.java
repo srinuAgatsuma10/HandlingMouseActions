@@ -21,7 +21,7 @@ public class MouseActions {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://testautomationpractice.blogspot.com/");
-//		driver.manage().window().maximize();
+		driver.manage().window().maximize();
 	}
 
 	@Test(priority = 1)
@@ -44,7 +44,7 @@ public class MouseActions {
 		inputBox1.sendKeys("Moneky D Luffy");
 
 		act.doubleClick(copyButton).perform();
-		String text = inputBox2.getAttribute("value");
+		String text = inputBox2.getAttribute("value"); // To get the text in the input filed.
 		System.out.println(text);
 		if (text == "Moneky D Luffy") {
 			Assert.assertTrue(true);
@@ -54,9 +54,13 @@ public class MouseActions {
 
 	}
 
-	@Test
+	@Test(priority = 3)
 	public void dragAndDrop() {
-
+		Actions act = new Actions(driver);
+		WebElement source = driver.findElement(By.xpath("//div[@id='draggable']"));
+		WebElement destination = driver.findElement(By.xpath("//div[@id='droppable']"));
+		act.dragAndDrop(source, destination).perform();
+		System.out.println(driver.findElement(By.xpath("//p[normalize-space()='Dropped!']")).getText());
 	}
 
 	@AfterClass

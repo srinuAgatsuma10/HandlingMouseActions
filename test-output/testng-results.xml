@@ -1,29 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-24T20:21:56 IST" name="Default suite" finished-at="2025-03-24T20:22:06 IST" duration-ms="9369">
+  <suite started-at="2025-03-24T20:36:52 IST" name="Default suite" finished-at="2025-03-24T20:37:03 IST" duration-ms="11295">
     <groups>
     </groups>
-    <test started-at="2025-03-24T20:21:56 IST" name="Default test" finished-at="2025-03-24T20:22:06 IST" duration-ms="9369">
-      <class name="guru99DemoSite.MouseActions">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:guru99DemoSite.MouseActions@62379589]" started-at="2025-03-24T20:21:57 IST" name="setUp" finished-at="2025-03-24T20:22:05 IST" duration-ms="8297" status="PASS">
+    <test started-at="2025-03-24T20:36:52 IST" name="Default test" finished-at="2025-03-24T20:37:03 IST" duration-ms="11295">
+      <class name="automationBlogSpot.MouseActions">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:automationBlogSpot.MouseActions@776aec5c]" started-at="2025-03-24T20:36:52 IST" name="setUp" finished-at="2025-03-24T20:37:02 IST" duration-ms="10302" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="contextClick()[pri:1, instance:guru99DemoSite.MouseActions@62379589]" started-at="2025-03-24T20:22:05 IST" name="contextClick" finished-at="2025-03-24T20:22:05 IST" duration-ms="401" status="PASS">
+        <test-method signature="mouseHover()[pri:1, instance:automationBlogSpot.MouseActions@776aec5c]" started-at="2025-03-24T20:37:02 IST" name="mouseHover" finished-at="2025-03-24T20:37:02 IST" duration-ms="450" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- contextClick -->
-        <test-method signature="doubleClick()[pri:2, instance:guru99DemoSite.MouseActions@62379589]" started-at="2025-03-24T20:22:05 IST" name="doubleClick" finished-at="2025-03-24T20:22:06 IST" duration-ms="217" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doubleClick -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:guru99DemoSite.MouseActions@62379589]" started-at="2025-03-24T20:22:06 IST" name="tearDown" finished-at="2025-03-24T20:22:06 IST" duration-ms="363" status="PASS">
+        </test-method> <!-- mouseHover -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationBlogSpot.MouseActions@776aec5c]" started-at="2025-03-24T20:37:02 IST" name="tearDown" finished-at="2025-03-24T20:37:03 IST" duration-ms="477" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- guru99DemoSite.MouseActions -->
+      </class> <!-- automationBlogSpot.MouseActions -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

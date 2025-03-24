@@ -21,7 +21,7 @@ public class MouseActions {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://testautomationpractice.blogspot.com/");
-		driver.manage().window().maximize();
+//		driver.manage().window().maximize();
 	}
 
 	@Test(priority = 1)
@@ -35,6 +35,22 @@ public class MouseActions {
 
 	@Test(priority = 2)
 	public void doubleClick() {
+		Actions act = new Actions(driver);
+		WebElement inputBox1 = driver.findElement(By.xpath("//input[@id='field1']"));
+		WebElement inputBox2 = driver.findElement(By.xpath("//input[@id='field2']"));
+		WebElement copyButton = driver.findElement(By.xpath("//button[normalize-space()='Copy Text']"));
+
+		inputBox1.clear();
+		inputBox1.sendKeys("Moneky D Luffy");
+
+		act.doubleClick(copyButton).perform();
+		String text = inputBox2.getAttribute("value");
+		System.out.println(text);
+		if (text == "Moneky D Luffy") {
+			Assert.assertTrue(true);
+		} else {
+			System.out.println("Plese check the value attribute");
+		}
 
 	}
 

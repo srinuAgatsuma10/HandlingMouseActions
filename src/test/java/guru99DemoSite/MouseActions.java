@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 public class MouseActions {
 
 	WebDriver driver;
-	
+
 	@BeforeClass
 	public void setUp() {
 		driver = new ChromeDriver();
@@ -24,10 +24,10 @@ public class MouseActions {
 		driver.get("https://demo.guru99.com/test/simple_context_menu.html");
 		driver.manage().window().maximize();
 	}
-	
-	@Test
+
+	@Test(priority = 1)
 	public void contextClick() {
-		Actions act = new Actions(driver);	// Actions Class
+		Actions act = new Actions(driver); // Actions Class
 		WebElement contextClick = driver.findElement(By.xpath("//span[@class='context-menu-one btn btn-neutral']"));
 		WebElement cut = driver.findElement(By.xpath("//span[normalize-space()='Cut']"));
 		act.contextClick(contextClick).perform();
@@ -36,17 +36,23 @@ public class MouseActions {
 		String message = cutAlert.getText();
 		cutAlert.accept();
 		System.out.println(message);
-		
+
 	}
-	
-	@Test
+
+	@Test(priority = 2)
 	public void doubleClick() {
-		
+		Actions act = new Actions(driver);
+		WebElement doubleClick = driver
+				.findElement(By.xpath("//button[normalize-space()='Double-Click Me To See Alert']"));
+		act.doubleClick(doubleClick).perform();
+		Alert dcAlert = driver.switchTo().alert();
+		System.out.println(dcAlert.getText());
+		dcAlert.accept();
 	}
-	
+
 	@AfterClass
 	public void tearDown() {
 		driver.quit();
-	
+
 	}
 }

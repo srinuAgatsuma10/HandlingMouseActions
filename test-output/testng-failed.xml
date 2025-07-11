@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automationBlogSpot.MouseActions">
+      <class name="internetHerokuApp.ContextCLickOpeation">
         <methods>
-          <include name="tearDown"/>
-          <include name="dragAndDrop"/>
+          <include name="contextClick"/>
           <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- automationBlogSpot.MouseActions -->
+      </class> <!-- internetHerokuApp.ContextCLickOpeation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

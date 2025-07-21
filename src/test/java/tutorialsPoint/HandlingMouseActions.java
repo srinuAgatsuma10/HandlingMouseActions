@@ -24,7 +24,7 @@ public class HandlingMouseActions {
 		driver.manage().window().maximize();
 	}
 
-//	@Test(priority = 1)
+	@Test(priority = 1)
 	public void clickOperation() {
 		Actions act = new Actions(driver);
 		WebElement clickBtn = driver.findElement(By.xpath("//button[normalize-space()='Click Me']"));
@@ -42,9 +42,13 @@ public class HandlingMouseActions {
 		System.out.println(text);
 	}
 
-//	@Test(priority = 3)
+	@Test(priority = 3)
 	public void DoubleclickOperation() {
-
+		Actions act = new Actions(driver);
+		WebElement rightClickBtn = driver.findElement(By.xpath("//button[normalize-space()='Double Click Me']"));
+		act.contextClick(rightClickBtn);
+		String text = driver.findElement(By.xpath("//p[@id='doublec']")).getText();
+		System.out.println(text);
 	}
 
 	@AfterClass

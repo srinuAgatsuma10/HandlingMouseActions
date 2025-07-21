@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-21T19:41:52 IST" name="Default suite" finished-at="2025-07-21T19:41:56 IST" duration-ms="3905">
+  <suite started-at="2025-07-21T19:43:24 IST" name="Default suite" finished-at="2025-07-21T19:43:27 IST" duration-ms="3248">
     <groups>
     </groups>
-    <test started-at="2025-07-21T19:41:52 IST" name="Default test" finished-at="2025-07-21T19:41:56 IST" duration-ms="3905">
+    <test started-at="2025-07-21T19:43:24 IST" name="Default test" finished-at="2025-07-21T19:43:27 IST" duration-ms="3248">
       <class name="tutorialsPoint.HandlingMouseActions">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tutorialsPoint.HandlingMouseActions@776aec5c]" started-at="2025-07-21T19:41:52 IST" name="setUp" finished-at="2025-07-21T19:41:56 IST" duration-ms="3632" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tutorialsPoint.HandlingMouseActions@776aec5c]" started-at="2025-07-21T19:43:24 IST" name="setUp" finished-at="2025-07-21T19:43:27 IST" duration-ms="2979" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="contextClickOperation()[pri:2, instance:tutorialsPoint.HandlingMouseActions@776aec5c]" started-at="2025-07-21T19:41:56 IST" name="contextClickOperation" finished-at="2025-07-21T19:41:56 IST" duration-ms="52" status="PASS">
+        <test-method signature="DoubleclickOperation()[pri:3, instance:tutorialsPoint.HandlingMouseActions@776aec5c]" started-at="2025-07-21T19:43:27 IST" name="DoubleclickOperation" finished-at="2025-07-21T19:43:27 IST" duration-ms="48" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- contextClickOperation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tutorialsPoint.HandlingMouseActions@776aec5c]" started-at="2025-07-21T19:41:56 IST" name="tearDown" finished-at="2025-07-21T19:41:56 IST" duration-ms="186" status="PASS">
+        </test-method> <!-- DoubleclickOperation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tutorialsPoint.HandlingMouseActions@776aec5c]" started-at="2025-07-21T19:43:27 IST" name="tearDown" finished-at="2025-07-21T19:43:27 IST" duration-ms="187" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
